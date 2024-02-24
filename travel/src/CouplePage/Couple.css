@@ -1,0 +1,104 @@
+.couple-total-bg{
+    background-color:whitesmoke;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.couple-bg{
+    background-color:whitesmoke;
+    padding: 10px;
+}
+
+
+.Couple-card{
+    height:100%;
+    background-color: black;
+}
+
+.card-con{
+   background-color: white;
+   border-radius: 20px;
+  margin-top: 30px;
+   margin: 20px;
+ 
+}
+.couple-img{
+    transition: transform 0.3s;
+}
+.couple-img:hover{
+    transform: scale(0.9);
+}
+.couple-tour{
+    border: 2px solid #fe953f;
+    padding: 10px;
+    font-weight: bold;
+}
+.Best-price{
+    background-color: #e00883;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.hotels-icon-con{
+    display: flex;
+}
+.hotels-icon{
+      padding: 6px;
+}
+.hotel-name{
+    align-self: center;
+}
+.lined-price{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: black;
+}
+.couple-place{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.couple-days{
+    font-family: "Roboto";
+    padding: 10px;
+    font-size: 18px;
+}
+.couple-destinations{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.couple-destinations-place{
+    
+    font-family: "Roboto";
+    padding: 10px;
+    font-size: 18px;
+}
+.couple-Inclusions{
+    font-size: 18px;
+}
+.couple-deal-price{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.couple-price{
+    color: #f77914;
+    font-size: 30px;
+}
+.per-couple{
+    font-family: 'Times New Roman', Times, serif;
+}
+.coupe-add-btn{
+    background-color: #f77914;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-color: transparent;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.coupe-add-btn:hover{
+    transform: scale(1.2);
+}

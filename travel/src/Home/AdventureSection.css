@@ -1,0 +1,11 @@
+.Adventure-card-des{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Adventure-card-img{
+    transition: transform 1.8s;
+}
+.Adventure-card-img:hover{
+    transform: scale(0.8);
+}

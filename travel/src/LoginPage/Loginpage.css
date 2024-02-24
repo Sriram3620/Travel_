@@ -1,0 +1,21 @@
+.LoginPageCon
+{
+   background-image: url("https://images.pexels.com/photos/2272940/pexels-photo-2272940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 7%;
+    padding-right: 10%;
+}
+.Login-box{
+    background-image: linear-gradient(to bottom,#eaeff5,#eaeff5,#eaeff5);
+    opacity: 0.9;
+    padding: 15px;
+}
+.sign-name{
+    font-weight: bold;
+    font-size:25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.signUp-link{
+    cursor: pointer;
+}

@@ -1,0 +1,268 @@
+.Maldives-sec-bg{
+    background-color:white;
+    height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.Maldives-total-bg{
+    display: flex;
+    height: 43vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("http://s1.picswalls.com/wallpapers/2014/07/28/maldives-backgrounds_121016524_122.jpg");
+    background-size: cover;
+}
+
+.MaldivesTab-con{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 45vh;
+    border-radius: 40px;
+}
+.Maldives-Tabs{
+    background-color:transparent;
+    border-radius: 30px;
+    color: black;
+    height: 50vh;
+}
+.Tab-con
+{
+    display: flex;
+    color:black;
+    background-color:transparent;
+    justify-content: space-around;
+}
+.Tabs{
+    border-style: solid;
+    border-color:white;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Tabs:hover{
+  background-color: white;
+  color: black;
+}
+.Tab-Home{
+    background-color: white;
+}
+.radio-input input {
+  display: none;
+}
+
+.radio-input {
+  
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: transparent;
+  color: white;
+  overflow: hidden;
+  border: 1px solid ;
+  border-color: transparent;
+}
+
+.radio-input label {
+
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 20px; 
+}
+
+.selection {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: calc(var(--container_width) / 4);
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: .15s ease;
+}
+
+.radio-input label:has(input:checked) {
+  color:black;
+  background-color: white;
+}
+
+.radio-input label:has(input:checked) ~ .selection {
+  background-color: black;
+  display: inline-block;
+}
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 0/4));
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 1/4));
+}
+
+.radio-input label:nth-child(3):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 2/4));
+}
+
+.radio-input label:nth-child(4):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 3/4));
+}
+.fade-in-from-top {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+}
+
+.fade-in-from-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.Info-con
+{
+  background-color: white;
+  height: 100%;
+  margin:10px;
+}
+.mal-info-head{
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.Been{
+  color: #2076c1;
+  margin: 10px;
+  padding: 10px;
+}
+.Mal-history
+{
+  margin: 10px;
+  font-size: 17px;
+  padding: 10px;
+}
+.Mal-icon-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px;
+  background-color: yellow;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.Mal-icons{
+   text-align: center;
+   margin-top: 10px;
+}
+.Mal-des-con{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+.Mal-hr-line{
+  width: 100%;
+  background-color: black;
+}
+.Mal-des{
+  font-size: 27px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}
+.Mal-reach{
+  font-size: 20px;
+  color: #868686;
+  font-family: "Roboto  ";
+}
+
+.tourPlan-con{
+  display: flex;
+}
+.plan-no{
+  align-self: flex-start;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+}
+.days-count
+{
+  background-color: yellow;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+}
+.departure-days{
+  align-self: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.depature-span-des
+{
+  font-weight: normal;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.departure-des{
+   align-self: flex-start;
+   margin-top: 15px;
+}
+.day1-des
+{
+  font-size: 16px;
+  color: #868686;
+  font-family:"Roboto";
+  
+  line-height: 32px;
+  
+}
+.Map-con
+{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.Map-head{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+.map{
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+}
+.history-para{
+   color: #868686;
+    margin: 20px;
+    padding: 10px;
+}
+@media (max-width:568px) {
+  .Mal-des{
+    font-size: 23px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .departure-days{
+    align-self: center;
+    text-align: center;
+  }
+  
+  
+}

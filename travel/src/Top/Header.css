@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.Home-con{
+ width: 100%;
+}
+.search-input{
+    padding: 5px;
+    margin: 10px;
+   text-align: left;
+}
+.search-btn{
+    background-color:  #101357;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    align-self: center;
+}
+.search-input-con{
+    margin: 15px;
+
+}
+.Places-btn{
+   
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.place-btn-con{
+    align-self: center;
+}
+.Help-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+   
+}
+.help-top-con{
+    align-self: center;
+
+}
+.help-icon{
+    font-size: 20px;
+    margin: 5px;
+    align-self: center;
+}
+.help-name{
+    font-size: 20px;
+    margin: 5px;
+    
+}
+
+
+.Help-con:hover {
+    color:aqua; 
+    text-decoration:none; 
+    cursor:pointer;  
+}

@@ -1,0 +1,9 @@
+.NewYork-total-bg{
+    display: flex;
+    height: 43vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("https://www.laoistoday.ie/wp-content/uploads/2019/08/1_318_02.jpg");
+  
+    background-size: cover;
+}

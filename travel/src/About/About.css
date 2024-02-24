@@ -1,0 +1,106 @@
+.About-total-bg{
+    background-color:whitesmoke;
+    height: 83vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.aboutUs-name{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+.about-quote{
+    color:black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    margin: 10px;
+    line-height: 60px;
+}
+.quote-span{
+    color:#71c21b;
+}
+.about-para{
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 40px;
+
+}
+.about-img{
+    height: 400px;
+    width: 700px;
+    margin: 10px;
+    margin-top: 30%;
+}
+.about-profile-img{
+    border-radius: 300px;
+    height: 200px;
+    width: 200px;
+}
+.about-profile-con{
+    display: flex;
+    margin: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.about-profile-founders{
+    align-self: center;
+    margin: 10px ;
+}
+.about-profile-name{
+    color: #71c21b;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-founder{
+    font-size: 20px;
+    font-weight: bold;
+}
+.linkedIn-icon{
+    font-size: 30px;
+    color: #0077b5;
+    cursor: pointer;
+    transition: transform 0.3s;
+ }
+.linkedIn-icon:hover{
+    
+    transform: scale(1.2);
+}
+.insta-icon{
+    font-size: 30px;
+    color:#cd486b ;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.insta-icon:hover{
+    
+    transform: scale(1.2);
+}
+.twitter-icon{
+    color: #1DA1F2;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.twitter-icon:hover{
+    
+    transform: scale(1.2);
+}
+@media screen and (max-width:768px) {
+    .about-quote{
+        text-align: center;
+    }
+    .About-total-bg{
+        background-color:whitesmoke;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .about-img{
+        height: 200px;
+        width: 320px;
+       line-height: 0px;
+    }
+}

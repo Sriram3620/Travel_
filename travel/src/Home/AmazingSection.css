@@ -1,0 +1,100 @@
+.hrline{
+    color: black;
+    font-size: 90px;
+    height: 100px;     
+}
+.ama-head-con{
+    display: flex;
+    align-items: center;
+}
+.Amazing-head{
+    line-height: 1.15em;
+    font-family: "Montserrat,sans-serif";
+    font-weight: 400;
+    align-self: flex-end;
+    margin-top: 80px;
+}
+.amazing-head-span{
+    font-weight: bold;
+}
+
+.Maldives-home{
+    background-image: url("https://images.unsplash.com/photo-1516815231560-8f41ec531527?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbGRpdmVzfGVufDB8fDB8fHww");
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: transform 0.7s;
+}
+.maldives-name{
+    font-weight: bold;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.maldives-price{
+    font-weight: bold;
+    display: none;
+    
+}
+.Places-home-bg{
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: transform 0.7s;
+    padding: 10px;
+}
+
+.Places-home-bg:hover{
+    transform: scale(0.9);
+    opacity: 0.9;
+    .maldives-name{
+        display: block;
+    }
+    .maldives-price{
+        display: block;
+    }
+
+}
+
+.maldives-img{
+    background-image: url("https://images.unsplash.com/photo-1516815231560-8f41ec531527?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbGRpdmVzfGVufDB8fDB8fHww");
+    color: black;
+}
+.bora-img{
+    background-image: url("https://images6.alphacoders.com/361/361446.jpg");
+ 
+}
+.pammukkle{
+    background-image: url('https://sencaptour.com/wp-content/uploads/2023/06/Pamukkale-ve-Salda-Golu-Turu-1.webp');
+    color: white;
+}
+.Keukenhof{
+    background-image: url("https://blog.radissonblu.com/wp-content/uploads/2017/03/Tulip-gardens-Keukenhof.jpg");
+    color: white;
+}
+.DeadSea{
+    background-image: url("https://stayclosetravelfar.com/wp-content/uploads/2019/01/dead-sea-israel-reading-newspaper.jpg");  
+}
+.NewYork{
+    background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/bd/6f/17.jpg");
+    color: white;
+}
+.switzerland{
+    background-image: url("https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg");
+    color: white;
+}
+.Tokyo{
+    background-image: url('https://blog.turkishairlines.com/wp-content/uploads/2022/11/tokyo-notlari.jpg');
+    color: white;
+}
+.Madrid{
+    background-image: url("https://a.cdn-hotels.com/gdcs/production184/d314/ecd03240-9bea-11e8-b980-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium");
+    color: white;
+}

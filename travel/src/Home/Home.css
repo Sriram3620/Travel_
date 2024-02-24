@@ -1,0 +1,213 @@
+.Home-con-bg{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+   background-color:whitesmoke;
+  
+}
+
+.Home-slide-image{
+    height: 200px;
+    width: 100%;
+}
+
+.Intro-card{
+    background-color:rgba(198,115,62,255);
+}
+.intro-img{
+    width: 100%;
+}
+.Explore-name{
+    font-weight: bold;
+    font-family: "Roboto";
+    margin: 10px;
+    font-style: italic;
+    
+}
+.intro-card-des{
+    color: #e3d8c2;
+    font-size: 17px;
+    margin: 10px;
+    
+}
+.Book-btn{
+    height: 40px;
+    width: 120px;
+    background-color: #463030;
+    border-color: #463030;
+    font-weight: bold;
+    margin: 10px;
+    transition: transform 0.3s;
+    
+}
+.Book-btn:hover{
+    transform: scale(1.2);
+    background-color: green;
+}
+.Confirm-btn{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.Details-name{
+    color:#101357;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Tre-con{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+    
+}
+.Trending-con{
+    display: flex;
+     overflow: auto; 
+    align-self: center;
+    color: black;
+    height: 90vh;
+}
+.Trend-card{
+    display: flex;
+    height: 90vh;
+   
+}
+.trend-img-con{
+    color: #101357;
+    transition: transform 0.5s;
+}
+.trend-img-con:hover{
+   transform: scale(0.9);
+}
+.offer-con{
+    display: flex;
+    justify-content: space-between;
+}
+.offer-img{
+    height: 80px;
+    width: 90px;
+}
+
+.trending-name{
+     
+    font-weight: bold;
+    font-family: "Bree serif";
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.Book2-btn{
+    background-color:#101357;
+    height: 40px;
+    width: 90px;
+    color: black;
+    font-weight: bold;
+    align-self: center;
+    border-color: transparent;
+    color: white;
+    transition: transform 0.2s;
+}
+.Book2-btn:hover{
+    background-color: green;
+    transform: scale(1.2);
+}
+
+
+
+.Coupon-bg{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-minimalistic-black-event-promotion-coupon-background-image_262133.jpg");
+    background-size: cover;
+    height: 400px;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.Coupen-con{
+    display: flex;
+     margin: 10px;
+}
+.Coupen-des{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(225,181,84,255);
+    padding-left: 15px;
+}
+.Apply-con{
+    align-self: center;
+    
+   
+}
+.Apply-btn{
+    height: 40px;
+    width:90px;
+    background-color:#f5cd20;
+    font-weight: bold;
+    align-self: flex-end;
+    color:white;
+    margin: 15px;
+}
+.gift-icon{
+    font-size: 40px;
+    color: red;
+}
+.Coupon-head{
+    color: black;
+    font-weight: bold;
+    font-family: "Bree serif";
+    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .intro-img{
+        height: 460px;
+        width: 400px;
+    }
+    .Home-slide-image{
+        height: 400px;
+        width: 40vw;
+    }
+    .Home-con-bg{
+     overflow-y: auto;   
+      
+    }
+    .Trend-card{
+        display: flex;
+        height: 75vh;
+    }
+    .trend-img-con{
+        flex-grow: 1;
+    }
+    .Des-con{
+        flex-grow: 1;
+    }
+    .Apply-con
+    {
+        order: -1;
+    }
+    .Coupen-des{
+        font-size: 35px;
+    }
+}
+
+
+.animated-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .animate{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .animated-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 
