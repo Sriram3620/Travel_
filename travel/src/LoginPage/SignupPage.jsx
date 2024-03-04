@@ -8,17 +8,18 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import  { useState } from 'react';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -32,14 +33,30 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUpPage() {
+   
+  const [signUperr,setSignUperr]=useState(false)
+
     const navigate=useNavigate();
-  const handleSubmit = (event) => {
+  const handleSubmit =async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const userDetails={
+      name:data.get('firstName')+data.get('lastName'),
       email: data.get('email'),
       password: data.get('password'),
-    });
+    }
+    const res =await axios.post("http://localhost:3001/register",userDetails)
+    if(res.data==="userAlreadyExist")
+    {
+      setSignUperr(true)
+      alert("UserAlready Exists")
+    }
+    else
+    {
+      setSignUperr(false)
+      navigate('/login', { replace: true });
+    }
+  
   };
 
   return (
@@ -105,13 +122,9 @@ export default function SignUpPage() {
                   autoComplete="new-password"
                 />
               </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid>
+              
             </Grid>
+             
             <Button
               type="submit"
               fullWidth
@@ -120,6 +133,7 @@ export default function SignUpPage() {
             >
               Sign Up
             </Button>
+
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <a href='' onClick={()=>navigate('/login')} >

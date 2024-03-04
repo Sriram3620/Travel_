@@ -1,0 +1,145 @@
+.headingrow {
+    background-color: rgb(6, 6, 104);
+    color: white;
+    font-size: x-large;
+    font-family: "roboto";
+  }
+  .Admin-bg
+  {
+    background-color: white;
+    height: 80vh;
+    overflow-y: auto;
+  }
+  .textend {
+    text-align: start;
+  }
+  
+  .updatebtn {
+    font-family: "roboto";
+  }
+  
+  .updatebtn:hover
+  {
+      text-decoration: underline;
+      color: rgb(152, 8, 152);
+      font-size: medium;
+  }
+  .AdminTrendingName
+  {
+    color: navy!important;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:"Roboto";
+  }
+  .AdminTrendId
+  {
+    color: darkgrey!important;
+  }
+ .Enter-tending-details
+ {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ .trending-dlte-btn
+ {
+  background-color: red!important;
+  color: white!important;
+  margin: 8px;
+  height: 40px;
+  width: 70px;
+  border-radius: 8px;
+  text-align: center;
+ }
+ .nodata-admin
+ {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+ }
+ .confirm-booking-con{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 30vh;
+   justify-content: center;
+ }
+
+ @media (max-width:576px) {
+   .confirm-booking-con{
+       height: fit-content;
+       padding: 15px;
+   }
+ }
+
+ .booking-btn-con
+ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.sure-booking
+{
+  font-size: 20px;
+}
+ .fav-cancel-btn{
+  height: 40px;
+  width: 100px;
+  margin: 10PX;
+  background-color: red;
+  color: white;
+  border-color: transparent;
+  
+ }
+ .fav-confirm-btn
+ {
+  height: 40px;
+  width: 100px;
+  margin: 10PX;
+  background-color:green;
+  border-color: transparent;
+  color: white;
+ }
+ .tick-success-img
+ {
+  height: 100px;
+  width: 100px;
+ }
+ .booking-success-con
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ .booking-thankyou{
+  font-size: 25px;
+  padding: 15px;
+ }
+ .vaccination-by-coverage-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c2b;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.vaccination-by-coverage-heading {
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  
+}
+.bar-chart
+{
+  overflow-x: auto;
+}
+.adminbookingTable
+{
+  overflow-x: auto;
+}

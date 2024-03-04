@@ -1,7 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-
+import { useState,useEffect } from 'react';
+import axios from 'axios';
 
 let card=[
     {
@@ -49,6 +50,18 @@ let card=[
 
 function Trending() {
 
+  const [trendingData,setTrendingData]=useState([])
+    useEffect(() => {
+     async function fetchData() {
+       try {
+         const res = await axios.get("http://localhost:3001/trendingdetails");
+         setTrendingData(res.data);
+       } catch (error) {
+         console.error('Error fetching data:', error);
+       }
+     }
+     fetchData();
+   }, []);
    
 
   return (
@@ -56,26 +69,23 @@ function Trending() {
     <div id="Trending" className='Trending-con w-100 '>
       
     {
-        card.map((val)=>{
+        trendingData.map((val)=>{
             return(
                 <div className='Card-con m-3'>
                     <Card className={ 'shadow Trend-card p-2 '}  style={{ width: '18rem',height:'85vh' }}>
-       <Card.Img className='trend-img-con' variant="top" src={val.img} />
-      <Card.Body className='Des-con'>
-        <Card.Title>{val.Place}</Card.Title>
-        <Card.Text >
-         {val.Description}
-        </Card.Text>
-       
-        </Card.Body>
-       
-       
-       <div className='offer-con '>
-        <Button className='Book2-btn'>Add</Button>
-        <img className='offer-img' src={val.offerImg}/>
-        </div>
-    </Card>
-                </div>
+              <Card.Img className='trend-img-con' variant="top" src={val.imgUrl} />
+              <Card.Body className='Des-con'>
+                <Card.Title>{val.destination}</Card.Title>
+                <Card.Text >
+                {val.description}
+                </Card.Text>
+                </Card.Body>
+            <div className='offer-con '>
+              {/* <Button className='Book2-btn'>Add</Button> */}
+              <img className='offer-img' src={val.offerimg}/>
+                  </div>
+                   </Card>
+                          </div>
             )
         })
     }

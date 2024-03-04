@@ -12,17 +12,19 @@ import "./Loginpage.css";
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Navigate } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+
+import { useNavigate ,Navigate} from 'react-router-dom';
 import axios from "axios";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import Cookies from 'js-cookie'
 function Copyright(props) {
     
+ 
 
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -35,12 +37,26 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function SignIn() {
+export default function SignIn(props) {
+
     const navigate=useNavigate();
+    
+    // useEffect(() => {
+    //   const token = Cookies.get("jwt_token");
+    //   setCheck(token)
+    //   if (check !== '') {
+    //     navigate('/', { replace: true }); // Redirect to '/' if token exists
+    //   }
+    // },[navigate]);
+   
+
     const [loginData,setData]=useState({
       email:"",
       password:""
     });
+   
+    const [Loginerr,setLoginerr]=useState(false)
+    const [Logintext,setLogintext]=useState('')
 
   const handleChange=(event)=>
   {
@@ -51,13 +67,40 @@ export default function SignIn() {
   }
 
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
-    console.log(loginData);
-    axios.post("http://localhost:8000",loginData)  
-    .then(response=>console.log(response))
-    .catch(err=>console.log(err));
+    const data = new FormData(event.currentTarget);
+    const LoginData={
+      email: data.get('email'),
+      password: data.get('password'),
+    };
+    const res=await axios.post("http://localhost:3001/login",LoginData)
+    if(typeof(res.data)==="object")
+    {
+    Cookies.set('jwt_token', res.data.Token, {
+      expires: 30,
+      path: '/',
+    })
+    Cookies.set('user',res.data.userName,{
+      expires: 30,
+      path: '/',
+    })
+    navigate('/', { replace: true });
+      setLoginerr(false)
+      
+    }
+    else 
+    {
+       setLoginerr(true)
+       setLogintext(res.data)
+    }
   };
+  const token = Cookies.get('jwt_token')
+  if(token!==undefined)
+  {
+   return <Navigate to="/" replace />
+  }
+
 
   return (
     
@@ -101,6 +144,7 @@ export default function SignIn() {
               autoComplete="current-password"
               onChange={handleChange}
             />
+            {Loginerr && <p className='text-danger ml-2 Error-msg-login'>*{Logintext}</p>}
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
@@ -109,7 +153,7 @@ export default function SignIn() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 1, mb: 2 }}
             >
               Sign In
             </Button>

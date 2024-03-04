@@ -18,9 +18,29 @@
     align-self: center;
 }
 .search-input-con{
-    margin: 15px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+.search-input-con:hover{
+    color: aqua;
+    font-weight: normal;
+}
+.bookmark-icon
+{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.your-bookings-head
+{
+    font-size: 23px;
+    font-weight: bold;
+}
+
 .Places-btn{
    
     font-size: 25px;
@@ -58,4 +78,11 @@
     color:aqua; 
     text-decoration:none; 
     cursor:pointer;  
+}
+.favourites-count
+{
+    color:#101357;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
 }

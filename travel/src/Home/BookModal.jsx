@@ -29,9 +29,9 @@ function MyVerticallyCenteredModal(props) {
 
   return (
     <>
-      <Button className='Book-btn' onClick={() => setModalShow(true)}>
+      {/* <Button className='Book-btn' onClick={() => setModalShow(true)}>
         Book
-      </Button>
+      </Button> */}
 
       <MyVerticallyCenteredModal
         show={modalShow}

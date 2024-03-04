@@ -3,6 +3,12 @@
     height: 80vh;
     overflow-y: auto;
 }
+@media(max-width:576px)
+{
+    .couple-total-bg{
+        height: 100%;
+    }
+}
 
 .couple-bg{
     background-color:whitesmoke;

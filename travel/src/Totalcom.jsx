@@ -8,7 +8,6 @@ export default function Total()
 
 {
     return(
-    
             <div>
       <ResNav/>
     <div className='bg-con'>
@@ -18,7 +17,6 @@ export default function Total()
    <div className="Home-bg-con d-flex">
      <Home1/>
    </div>
-
    </div>
   </div>
 

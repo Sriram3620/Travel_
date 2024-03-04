@@ -1,0 +1,147 @@
+.Favorites-total-bg
+{
+    background-color:white;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+@media(max-width:576px)
+{
+    .Favorites-total-bg{
+        height: 100%;
+    }
+}
+.no-favorites-con
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.CartImg{
+    height: 130px;
+    width: 180px;
+}
+.cart-con{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart-place-name
+{
+    font-weight: bold;
+    color: #e00883;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Cart-destination{
+    color: dimgrey;
+
+    font-size: 18px;
+}
+.CarkBookBtn
+{
+    background-color: green;
+    color: white;
+    border-color: transparent;
+    height: 40px;
+    width: 120px;
+}
+/* This is an example, feel free to delete this code */
+.cart-book-btn {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+    font-size: 16px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #28b30c, #17a48c, #032713);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin: 10px;
+  }
+  
+  .cart-book-btn svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .cart-book-btn span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .cart-book-btn:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  .cart-book-btn:hover span {
+    transform: translateX(7px);
+  }
+ 
+
+.button {
+    --color: red;
+    height: 40px;
+    padding: 0.5em 1.2em;
+    background-color: transparent;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid;
+    font-family: inherit;
+    
+    color: var(--color);
+    z-index: 1;
+    margin: 10px;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+    color: white;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color:white;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   

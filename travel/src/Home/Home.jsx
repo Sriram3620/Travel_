@@ -21,7 +21,7 @@ export default function Home1(){
                 <br/>Fun <span className="amazing-head-span">  Adventures  Waiting</span> For You</h1>
             </div>
         <Trending/>
-        <Coupen/>
+        
         <AmazingSec/>
         <AdventureQuotes/>
          </div>   

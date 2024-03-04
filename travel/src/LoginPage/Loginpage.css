@@ -19,3 +19,8 @@
 .signUp-link{
     cursor: pointer;
 }
+.Error-msg-login
+{
+    font-weight: bold;
+    font-size: 16px;
+}

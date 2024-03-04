@@ -1,0 +1,82 @@
+.your-bk-bg
+{
+    background-color: white;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.yourbk-img
+{
+    height: fit-content;
+}
+.your-bk-destination
+{
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(86, 75, 75); 
+    padding: 5px;
+    
+}
+.your-bk-destination-span{
+      font-size: 27px;
+      font-family: serif;
+      font-weight: bold;
+      color: #e00883;
+}
+.your-bk-price
+{
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(86, 75, 75);   
+    padding: 5px;
+}
+.your-bk-price-span
+{
+    font-size: 27px;
+    color:#251187;
+}
+.your-bk-type
+{
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(86, 75, 75); 
+    padding: 5px;
+}
+.your-bk-type-span
+{
+    font-size: 23px;
+    color:#251187;
+}
+.your-bk-cancel
+{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: red;
+    border-color: transparent;
+   font-weight: bold;
+   padding: 5px;
+   transition: transform 0.3s;
+}
+
+.your-bk-cancel:hover{
+    transform: scale(1.2);
+}
+.your-bk-nodata
+{
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+}
+@media (max-width:576px)
+{
+    .your-bk-nodata
+{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+}
